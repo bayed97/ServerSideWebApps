@@ -1,0 +1,9 @@
+<?php
+if(!session_start()){
+	session_start();
+}
+if(!isset($_SESSION['id'])){
+	header("Location:index.php"); 
+}
+include("db.php")
+?> 
